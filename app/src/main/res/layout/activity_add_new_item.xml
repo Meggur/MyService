@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".FunctionWindows.AddNewItemActivity">
+
+
+    <TextView
+        android:id="@+id/add_new_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Размещение объявления"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/add_new_item"
+        android:src="@drawable/product_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_product_image"
+        android:hint="Наименование товара"
+        android:padding="10dp"
+        android:background="@drawable/input_design"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textMultiLine"/>
+
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:hint="Описание товара"
+        android:gravity="top"
+        android:padding="10dp"
+        android:height="150dp"
+        android:background="@drawable/input_design"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textMultiLine"/>
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_description"
+        android:hint="Стоимость товара"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/input_design"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/add_new_product_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_below="@+id/product_price"
+        android:background="@drawable/button"
+        android:text="Добавить товар"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
